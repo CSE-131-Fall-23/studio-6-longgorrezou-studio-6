@@ -13,9 +13,12 @@ public class RecursiveMethods {
 	 */
 	public static double geometricSum(int n) {
 		
-			// FIXME compute the geometric sum for the first n terms recursively
-			return 0;
-		
+		double sum = 0.0;
+		for (int power = 1; power <= n; ++power) {
+			sum = sum + Math.pow(0.5, power);
+		}
+		return sum;
+			// FIXME compute the geometric sum for the first n terms recursively	
 	}
 
 	/**
